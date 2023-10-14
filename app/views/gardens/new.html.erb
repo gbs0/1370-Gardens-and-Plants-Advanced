@@ -1,0 +1,11 @@
+<div class="container py-5">
+  <h1>New garden</h1>
+
+  <%= render "form", garden: @garden %>
+
+  <br>
+
+  <div>
+    <%= link_to "Back to gardens", gardens_path, class: "btn btn-warning" %>
+  </div>
+</div>
