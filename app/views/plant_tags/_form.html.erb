@@ -1,0 +1,8 @@
+<div class="my-5">
+  <h1>Select new tag for: <strong><%= @plant.name %></strong></h1>
+
+  <%= simple_form_for [@plant, @plant_tag] do |f| %>
+    <%= f.input :tag, collection: @tags, include_blank: false %>
+    <%= f.submit "Associate Tag", class: "btn btn-success" %>
+  <% end %>
+</div>
